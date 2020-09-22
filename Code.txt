@@ -1,0 +1,16 @@
+[OnError]
+On Error GoTo ErrorHandler
+[ErrorHandler]
+ExitRoutine:
+On Error Resume Next
+   Exit Sub
+   '
+ErrorHandler:
+   Select Case Err.Number
+   Case Else
+      ErrHandler.colCErrVariables.Add "PropertyName: " & Property
+      '
+      Call ErrHandler.LogErrorToFile(Err.Number, Err.Description, Err.Source, "ProcName")
+      Call ErrHandler.LogErrorToMsgBox(Err.Number, Err.Description, Err.Source, "ProcName")
+   End Select
+   Resume ExitRoutine

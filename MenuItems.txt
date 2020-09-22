@@ -1,0 +1,35 @@
+'DO NOT REMOVE OR CHANGE THESE LINES
+'
+'Each Menu item is defined and requires the following pieces of information
+'Caption			=The name of the menu item
+'CodeBlockName		=The Name of the code block in the Code.txt file
+'InsertionPoint		=The insertion point
+'Possible values for InsertionPoint are:
+'ProcStart = 0
+'Cursor = 1
+'ProcEnd = 2
+'The format of each Menu Item must be maintained or the Application/AddIn may not work.
+'
+[Complete Error Block]
+Caption=Complete Error Block
+CodeBlockName=OnError
+InsertionPoint=0
+
+
+'
+[On Error]
+
+InsertionPoint=1
+'Testing Resileance
+CodeBlockName=OnError
+
+Caption=On Error
+
+[Error Handler]
+Caption=ErrorHandler
+CodeBlockName=ErrorHandler
+InsertionPoint=2
+[UnKnown]
+Caption=UnKnown
+CodeBlockName=UnKnown
+InsertionPoint=2
